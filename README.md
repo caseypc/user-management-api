@@ -1,9 +1,7 @@
-Setup instructions
-Any assumptions you made
-What you would improve given more time
+# User Management App
 
 ---
-# PROJECT CREATION STEPS
+## PROJECT CREATION STEPS
 ```bash
 # Create project
 composer create-project symfony/skeleton user-management-api
@@ -24,6 +22,7 @@ composer require --dev doctrine/doctrine-fixtures-bundle
 composer require --dev symfony/test-pack
 
 # edit .env.local to set DATABASE_URL, then create database
+cp .env .env.local
 php bin/console doctrine:database:create
 
 # Generate migration after building entity
@@ -34,4 +33,23 @@ php bin/console doctrine:migrations:migrate
 
 # Run local server
 php -S 127.0.0.1:8000 -t public
+```
+
+
+
+## BUILD FRONTEND
+```bash
+npm create vite@latest user-management-ui -- --template react-ts
+cd user-management-ui
+
+# Core dependencies
+npm install ag-grid-community ag-grid-react
+npm install -D sass
+
+# Improve state handling
+npm install @tanstack/react-query axios
+
+# Start dev server
+npm install
+npm run dev
 ```

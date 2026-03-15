@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9fafb;
+    color: #111827;
+}
+
+.app-shell {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.page-header {
+    margin-bottom: 16px;
+
+    h1 {
+        margin: 0;
+    }
+
+    p {
+        margin-top: 6px;
+        color: #6b7280;
+    }
+}
+
+.alert {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+    &--info {
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+    }
+
+    &--error {
+        background: #fef2f2;
+        border: 1px solid #fecaca;
+        color: #991b1b;
+    }
+}
+
+.users-toolbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+
+    &__search {
+        width: 100%;
+        max-width: 420px;
+        padding: 10px 12px;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+    }
+}
+
+.user-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+    &--active {
+        background: #dcfce7;
+        color: #166534;
+        border: 1px solid #86efac;
+    }
+
+    &--inactive {
+        background: #f3f4f6;
+        color: #374151;
+        border: 1px solid #d1d5db;
+    }
+
+    &--pending {
+        background: #fef3c7;
+        color: #92400e;
+        border: 1px solid #fcd34d;
+    }
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-card {
+    width: 520px;
+    max-width: 95vw;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+
+    &__header,
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__actions {
+        margin-top: 20px;
+    }
+}
+
+.form-field {
+    margin-top: 14px;
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid #d1d5db;
+        box-sizing: border-box;
+    }
+}
+
+.form-error {
+    color: #b91c1c;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.grid-meta {
+    margin-bottom: 12px;
+
+    &__loading {
+        margin-left: 12px;
+    }
+}
+
+.grid-actions,
+.grid-pagination {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.grid-pagination {
+    margin-top: 16px;
+}

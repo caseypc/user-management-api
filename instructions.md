@@ -89,10 +89,16 @@ $LOGINS),
 RETURN $THIS->JSON($RESULT);
 }
 }
+
+
 Questions:
 What is the performance problem with this code?
 How many database queries will this execute for 100 users?
 Provide a refactored solution.
+
+
+
+
 Sample B: React Component Issues
 // USERDASHBOARD.TSX
 FUNCTION USERDASHBOARD({ USERID }) {
@@ -198,6 +204,9 @@ RETURN $USER;
 What SOLID principles does this violate?
 What will happen if the CRM API is slow or down?
 How would you refactor this for better maintainability and reliability?
+
+
+
 Part 3: Architecture Discussion (Written - 30 minutes)
 Answer briefly (2-3 paragraphs each):
 
